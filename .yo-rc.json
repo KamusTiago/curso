@@ -42,7 +42,9 @@
     "jwtSecretKey": "YTNiM2RiN2UxOGI3YTdkMTIwZDczNGMxOWRhMTFjYmExODQ3MzY5ODg2NWE5NzIwNWQxY2FiYTU2M2QzMWZmZDQ3Yzk4NjgzNTE4YzhmOTQ1NjZlODZiZGYyNWExMjRkODVjNjM1YzBiZjVhZWQ4N2IyNWU4NWJhOTM2ODNhY2Q=",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["Region", "Country", "Location", "Department", "Task", "Employee", "Job", "JobHistory"],
+    "lastLiquibaseTimestamp": 1619563546000
   },
   "git-provider": "GitHub",
   "git-company": "KamusTiago",
