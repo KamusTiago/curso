@@ -49,5 +49,17 @@ node {
             sh "./mvnw -ntp verify -P-webapp -Pprod -DskipTests"
             archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
         }
+
+        stage('deploy'){
+            if(scm.branches[0].name ==~ /(\*\/develop)/){
+                echo 'Branch developer'
+                sh "cp ./target/*.jar /opt/jh/tiago-dev/app.jar"
+                sh "sudo systemctl restart tiago-dev"
+            } else {
+                echo 'Branch master'
+                sh "cp ./target/*.jar /opt/jh/tiago-prod/app.jar"
+                sh "sudo systemctl restart tiago-prod"
+            }
+        }
     }
 }
