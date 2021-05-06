@@ -44,7 +44,10 @@
     "clientThemeVariant": "",
     "reactive": false,
     "entities": ["Region", "Country", "Location", "Department", "Task", "Employee", "Job", "JobHistory"],
-    "lastLiquibaseTimestamp": 1619563546000
+    "lastLiquibaseTimestamp": 1619563546000,
+    "herokuAppName": "tiago-54321",
+    "herokuDeployType": "git",
+    "herokuJavaVersion": "11"
   },
   "git-provider": "GitHub",
   "git-company": "KamusTiago",
